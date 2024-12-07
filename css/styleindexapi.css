@@ -1,0 +1,37 @@
+.container-body {
+    background-image: url('../assets/img/ricky.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 50vh;
+}
+
+.btn {
+    height: 80px;
+    width: 500px;
+}
+
+.dropdown-menu {
+    width: 500px;
+
+}
+
+.dropdown-item {
+    justify-content: center;
+
+}
+
+.text-li1, .text-li2 , .text-li3 {
+    text-align: center;
+    
+}
+
+
+

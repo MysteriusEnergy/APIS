@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap"
+            rel="stylesheet"
+        />
+    <title>API - Rick and Morty</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header h1, .header h2 {
+            margin: 0;
+            padding: 0;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .dataAlbum {
+            margin-top: 254px;
+        }
+        .pagination {
+            justify-content: center; /* Centra la paginación horizontalmente */
+            margin-top: 10px;
+        }
+        .btn {
+            font-size: 1rem; /* Asegura que el texto en los botones sea visible */
+            color: #ffffff; /* Asegura que el texto en los botones sea blanco */
+            background-color: #007bff; /* Color de fondo para los botones */
+            border: none; /* Elimina el borde por defecto */
+        }
+        .btn:hover {
+            background-color: #0056b3; /* Color de fondo en hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <header class="text-center">
+            <h1>Ricky Morty API By Mario</h1>
+            <h2>Consumir API de Rikcy Morty</h2>
+            <div class="d-flex justify-content-center align-items-center">
+                <!-- Paginación -->
+                <ul id="pagination" class="pagination"></ul>
+                
+                <!-- Dropdown para elegir API -->
+                <div class="dropdown mx-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cambiar API
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" style="color: #000;" href="../pages/anime.html">Anime</a></li>
+                        <li><a class="dropdown-item" style="color: #000;" href="../pages/rickymorty.html">Pokemon</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Characters -->
+    <div class="container">
+        <div
+            id="dataAlbum"
+            class="dataAlbum row row-cols- row-cols-md-5 g-3"
+        ></div>
+    </div>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+    ></script>
+    <script src="../js/apimorty.js"></script>
+</body>
+</html>
